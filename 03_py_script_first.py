@@ -36,3 +36,30 @@ for i in range(5):
 #     print(i, end=' ')
     
 
+my_list = [1, 2, 3, 4, 5]
+for i in my_list:
+    print(i, end=' ')
+
+
+# # for loop with else
+for i in range(10):
+    print(i, end=' ')
+else:
+    print('All done!')
+
+# # while loop with else
+i = 0
+while i < 10:
+    print(i, end=' ')
+    i += 1
+else:
+    print('All done!')
+
+# # nested loop with else
+for i in range(5):
+    for j in range(5):
+        print('*', end=' ') 
+    print()
+else:
+    print('All done!')
+
