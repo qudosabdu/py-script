@@ -1,2 +1,89 @@
-This first novel by a young writer from the former Yugoslavia is a powerful and moving story of
-Hello World
+This is a simple web application to demonstrate the use of IP address, Subnet, Port, TCP, HTTP, HTTPS, FTP, SMTP, UDP, DNS, DHCP.
+
+
+## IP Address
+```bash
+http://
+```
+# Pupose of IP Address
+  Identifying a device 192.168.1.2
+  Location of a device
+    Network of a device
+    Host of a device
+    Interface of a device
+    Router of a device
+There are two types of IP
+    IPv4: 
+        32 bit address and 4 octets
+        192.168.1.2 each part octet is 8 bit
+
+    IPv6: 
+        128 bit address
+        2001:0db8:85a3:0000:0000:8a2e:0370:7334  each part is 16 bit
+
+# Subnet
+    there two most important components of subnet
+        1. subnet mask: 
+            The subnet mask is a 32-bit number that masks an IP address, 
+            and divides the IP address into network address and host address.
+        2. subnet ID:
+            A subnet ID is a portion of an IP address that identifies a specific network on an IP-based network. 
+            Subnetting is the process of creating new networks by dividing an existing network into smaller network segments.
+
+    192.168.1.2/24 
+        24 is the subnet mask
+        192.168.1.100 is the subnet ID
+
+    255.255.255.0 is the subnet mask
+    24 bit is the subnet mask in binary 11111111.11111111.11111111.00000000
+    24 bit convert to binary 11111111.11111111.11111111.00000000
+
+    each bit denote 2 power n where n is the position of the bit from right to left
+    2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0
+    128  64  32  16  8   4   2   1
+
+    192.168.1.1 to 192.168.1.254
+
+# port: 8080 
+    it is door like structure in a computer
+    it is a 16 bit number
+    it is used to identify the application
+    it is used to identify the service
+
+    port range 0 to 65535
+    0 to 1023 are well known ports
+    1024 to 49151 are registered ports
+    49152 to 65535 are dynamic ports
+
+    They are used by system processes that provide widely used types of network services.
+
+#TCP:
+    Transmission control protocol
+    it is a connection oriented protocol
+#HTTP:
+    Hyper text transfer protocol
+    it is a application layer protocol
+    it is used to transfer the data over the web
+#HTTPS:
+    Hyper text transfer protocol secure
+    it is a secure version of HTTP
+    it is used to transfer the data over the web
+#FTP:
+    File transfer protocol
+    it is used to transfer the file over the network
+#SMTP:
+    Simple mail transfer protocol
+    it is used to send the email
+#UDP:
+    User datagram protocol
+    it is a connection less protocol
+DNS:
+    Domain name system
+    it is used to convert the domain name to IP address
+#DHCP:
+    Dynamic host configuration protocol
+    it is used to assign the IP address to the device
+
+
+    
+        
