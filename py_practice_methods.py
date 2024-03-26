@@ -12,3 +12,4 @@ print(words) # I am abdul Qudoos, my age is 23
 
 words = 'I am {0} and my age is {1} and my habby is {2} '.format('abdul Qudoos', 23, "footbal")
 print(words) # 
+
