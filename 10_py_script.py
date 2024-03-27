@@ -26,5 +26,6 @@ c = int(c)
 
 # id function and data type
 # print(id(a))
-name:str = "abdul Qudoos"
-print(id(name)) # 2102907440368
+# name:str = "abdul Qudoos"
+# print(id(name)) # 2102907440368
+

@@ -18,4 +18,9 @@ with open('08_json_data.json', 'w') as file:
 with open('08_json_data.json', 'r') as file:
     data = json.load(file)
     print(data) #prints the data from the JSON file
+    
+
+
+
+
 
