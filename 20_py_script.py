@@ -4,28 +4,28 @@
 
 #Parent classs
 class Persion():
-    def __init__(self, name, age):
+    def __init__(self, name):
         self.name = name
-        self.age = age
     def welcome(self):
-        print(f"Welcome {self.name}, and your age is {self.age}")
-
+        print("Welcom from Person class>>>")
 class Game():
     def __init__(self, game):
         self.game = game
+    def welcome(self):
+        print("Helo from Game class")
 
 # child class
 
 class Student(Persion,Game):
-    def __init__(self, name, age, email, game):
-        super().__init__(name, age, game)
-        self.email = email
+    def __init__(self, name, age, game):
+        Persion.__init__(self, name)
+        Game.__init__(self, game)
+        self.age = age
         
-p1 = Persion("Abdul Qudoos", 23)
-g1 = Game("Football") 
-s1 = Student("Abdul Qudoos", 22, "abc@gmail.com", "Football")
-print(p1.name)
-# p1.welcome()
-# print(s1.age)
-# print(s1.email)
-# print(g1.game)
+s1 = Student("Abdul Qudoos", 22, "Football")
+print(s1.name)
+print(s1.age)
+print(s1.game)
+s1.welcome() #Welcom from Person class>>>
+
+        
