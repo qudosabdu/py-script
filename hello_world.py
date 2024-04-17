@@ -337,24 +337,41 @@
 
 # ** Multilevel Inheritance ** #
 
-class Dad:
-    basketball = 1
+# class Dad:
+#     basketball = 1
 
-class Son(Dad):
-    dance = 3
-    basketball = 3
-    def isdance(self):
-        return f"Yes I dance {self.dance}"
+# class Son(Dad):
+#     dance = 3
+#     basketball = 3
+#     def isdance(self):
+#         return f"Yes I dance {self.dance}"
 
-class Grandson(Son):
-    dance = 6
-    def isdance(self):
-        return f"Jackson Yeah "\
-            f"Yes I dance very awesome..."
+# class Grandson(Son):
+#     dance = 6
+#     def isdance(self):
+#         return f"Jackson Yeah "\
+#             f"Yes I dance very awesome..."
             
 
-darry = Dad()
-larry = Son()
-merry = Grandson()
-print(merry.isdance())
-print(merry.basketball)
+# darry = Dad()
+# larry = Son()
+# merry = Grandson()
+# print(merry.isdance())
+# print(merry.basketball)
+
+
+# ** Overriding ** #
+
+class A:
+    classvar1 = "I am a class variable in class A"
+    def __init__(self):
+        self.var1 = "I am inside class A's constructor"
+        self.classvar1 = "Intance var in class A"
+
+class B(A):
+    classvar2= "I am a class variable in class B"
+
+a = A()
+b = B()
+
+
